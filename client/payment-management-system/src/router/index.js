@@ -17,9 +17,17 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/adminLogin',
-    name: 'adminLogin',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AdminLogin.vue'),
+    path: '/login',
+    name: 'login',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue'),
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/employeeLogin',
+    name: 'employeeLogin',
+    component: () => import(/* webpackChunkName: "about" */ '../views/EmployeeLogin.vue'),
     meta: {
       requiresGuest: true
     }
@@ -38,6 +46,22 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/Register.vue'),
     meta: {
       requiresGuest: true
+    }
+  },
+  {
+    path: '/adminRegister',
+    name: 'adminRegister',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AdminRegister.vue'),
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/employeeRegister',
+    name: 'employeeRegister',
+    component: () => import(/* webpackChunkName: "about" */ '../views/EmployeeRegister.vue'),
+    meta: {
+      requiresAuth: true
     }
   },
   {
