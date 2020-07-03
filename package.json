@@ -1,0 +1,23 @@
+{
+  "name": "payment-management-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juzoace/Payment-management-system.git"
+  },
+  "author": "Nwigwe Uzochukwu Aham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juzoace/Payment-management-system/issues"
+  },
+  "homepage": "https://github.com/juzoace/Payment-management-system#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap-vue": "^2.15.0"
+  }
+}
